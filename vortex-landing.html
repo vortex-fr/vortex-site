@@ -1592,9 +1592,20 @@
                 gap: 40px;
             }
 
-            .team-content {
+            .about-block,
+            .about-block.reverse {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 32px;
+            }
+
+            .about-block.reverse .about-block-visual {
+                order: 0;
+            }
+
+            .about-grid,
+            .about-comparison,
+            .about-summary {
+                grid-template-columns: 1fr;
             }
 
             .flags-container {
