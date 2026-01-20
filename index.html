@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex - Doublez votre chiffre d'affaires grâce à l'IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://fast.wistia.com/player.js" async></script>
+    <script src="https://fast.wistia.com/embed/yep0stk9wq.js" async type="module"></script>
+    <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" data-cta-widget="eEPBCWS1BCag" async></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.5;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 48px;
+            background: #ffffff;
+            border-bottom: 1px solid #f0f0f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #1a1a1a;
+        }
+
+        .nav-right .btn-outline {
+            padding: 8px 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            background: transparent;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
+        .nav-right .btn-outline:hover {
+            background: #f5f5f5;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 48px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .version-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px 8px 8px;
+            background: #f8f8f8;
+            border: 1px solid #e8e8e8;
+            border-radius: 24px;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 32px;
+        }
+
+        .version-badge .version-logo {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: start;
+            margin-bottom: 48px;
+        }
+
+        .hero-left h1 {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: #1a1a1a;
+            letter-spacing: -1px;
+        }
+
+        .hero-right {
+            padding-top: 12px;
+        }
+
+        .hero-right p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn-primary {
+            padding: 12px 20px;
+            background: #2d5a2d;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: #3d7a3d;
+        }
+
+        .btn-secondary {
+            padding: 12px 20px;
+            background: #fff;
+            color: #1a1a1a;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background: #f5f5f5;
+        }
+
+        /* Video Section */
+        .video-container {
+            position: relative;
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        wistia-player[media-id='yep0stk9wq']:not(:defined) {
+            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/yep0stk9wq/swatch');
+            display: block;
+            filter: blur(5px);
+            padding-top: 56.25%;
+        }
+
+        /* Section Styles */
+        .section-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .badge-pink {
+            background: #2d5a2d;
+            color: #fff;
+        }
+
+        .badge-yellow {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .badge-green {
+            background: #22c55e;
+            color: #fff;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            font-size: 16px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #d97706;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            margin-top: 16px;
+            transition: gap 0.2s;
+        }
+
+        .section-link:hover {
+            gap: 10px;
+        }
+
+        .section-link svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            fill: none;
+        }
+
+        /* History Section */
+        .history-section {
+            padding: 100px 48px;
+            background: linear-gradient(180deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+        }
+
+        .history-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .history-section .section-header h2 {
+            color: #fff;
+        }
+
+        .history-section .section-header p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .history-timeline {
+            margin-top: 60px;
+            position: relative;
+        }
+
+        .history-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, #2d5a2d 0%, #22c55e 50%, #2d5a2d 100%);
+        }
+
+        .history-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 48px;
+            position: relative;
+        }
+
+        .history-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .history-item:nth-child(odd) {
+            flex-direction: row;
+            padding-right: calc(50% + 40px);
+        }
+
+        .history-item:nth-child(even) {
+            flex-direction: row-reverse;
+            padding-left: calc(50% + 40px);
+        }
+
+        .history-year {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #22c55e;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            white-space: nowrap;
+            z-index: 1;
+        }
+
+        .history-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 28px;
+            width: 100%;
+        }
+
+        .history-card.highlight {
+            background: rgba(34, 197, 94, 0.1);
+            border-color: rgba(34, 197, 94, 0.3);
+        }
+
+        .history-card.future {
+            background: linear-gradient(135deg, rgba(45, 90, 45, 0.3) 0%, rgba(34, 197, 94, 0.2) 100%);
+            border-color: #22c55e;
+        }
+
+        .history-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .history-card p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .history-card .btn-primary {
+            margin-top: 20px;
+            background: #22c55e;
+        }
+
+        .history-card .btn-primary:hover {
+            background: #16a34a;
+        }
+
+        /* Comment ça marche Section */
+        .how-it-works {
+            padding: 100px 48px;
+            background: linear-gradient(180deg, #f0f7f0 0%, #ffffff 100%);
+        }
+
+        .how-it-works-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .steps-list {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        .step-item {
+            padding: 28px 32px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .step-item:last-child {
+            border-bottom: none;
+        }
+
+        .step-item.active {
+            background: #fafafa;
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .step-icon {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c8 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .step-icon svg {
+            width: 22px;
+            height: 22px;
+            stroke: #2d5a2d;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .step-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .step-content {
+            margin-top: 16px;
+            padding-left: 60px;
+            display: none;
+        }
+
+        .step-item.active .step-content {
+            display: block;
+        }
+
+        .step-content p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .step-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #2d5a2d;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: gap 0.2s;
+        }
+
+        .step-link:hover {
+            gap: 10px;
+        }
+
+        /* Step Visuals */
+        .steps-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 350px;
+            position: relative;
+        }
+
+        .step-visual {
+            display: none;
+            width: 100%;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .step-visual.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .visual-card {
+            background: #fff;
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .visual-icon {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 24px;
+        }
+
+        .visual-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .visual-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .visual-label {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .visual-desc {
+            font-size: 15px;
+            color: #666;
+        }
+
+        /* Features Row */
+        .features-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 80px auto 0;
+        }
+
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .feature-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .feature-icon {
+            width: 24px;
+            height: 24px;
+            color: #666;
+        }
+
+        .feature-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .feature-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Clients / Stats Section */
+        .clients-section {
+            padding: 100px 48px;
+            background: linear-gradient(180deg, #fefce8 0%, #ffffff 100%);
+        }
+
+        .clients-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        .stat-item {
+            padding: 40px 32px;
+            text-align: center;
+            border-right: 1px solid #f0f0f0;
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-value {
+            font-size: 48px;
+            font-weight: 800;
+            color: #1a1a1a;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Offres Section */
+        .offres-section {
+            padding: 100px 48px;
+            background: #fff;
+        }
+
+        .offres-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .offres-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .offre-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 20px;
+            padding: 40px;
+            transition: all 0.3s;
+        }
+
+        .offre-card:hover {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .offre-card.featured {
+            border: 2px solid #22c55e;
+            position: relative;
+        }
+
+        .offre-badge {
+            position: absolute;
+            top: -12px;
+            left: 32px;
+            background: #22c55e;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .offre-header {
+            margin-bottom: 24px;
+        }
+
+        .offre-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .offre-tagline {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .offre-price {
+            margin-bottom: 24px;
+        }
+
+        .price-value {
+            font-size: 42px;
+            font-weight: 800;
+            color: #1a1a1a;
+        }
+
+        .price-period {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .offre-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .offre-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .offre-features li svg {
+            width: 20px;
+            height: 20px;
+            stroke: #22c55e;
+            fill: none;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .offre-cta {
+            width: 100%;
+            padding: 14px 24px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        .offre-cta.primary {
+            background: #1a1a1a;
+            color: #fff;
+            border: none;
+        }
+
+        .offre-cta.primary:hover {
+            background: #333;
+        }
+
+        .offre-cta.secondary {
+            background: #fff;
+            color: #1a1a1a;
+            border: 1px solid #e0e0e0;
+        }
+
+        .offre-cta.secondary:hover {
+            background: #f5f5f5;
+        }
+
+        /* Témoignages Section */
+        .temoignages-section {
+            padding: 100px 48px;
+            background: #f9fafb;
+        }
+
+        .temoignages-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .temoignages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .temoignage-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .temoignage-stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+        }
+
+        .temoignage-stars svg {
+            width: 18px;
+            height: 18px;
+            fill: #fbbf24;
+        }
+
+        .temoignage-text {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .temoignage-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .author-name {
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 14px;
+        }
+
+        .author-role {
+            color: #666;
+            font-size: 13px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 100px 48px;
+            background: #fff;
+        }
+
+        .faq-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .faq-item {
+            background: #f9fafb;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .faq-question span {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .faq-question svg {
+            width: 20px;
+            height: 20px;
+            stroke: #666;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question svg {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 24px 20px;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.7;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* RDV Section */
+        .rdv-section {
+            padding: 100px 48px;
+            background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+        }
+
+        .rdv-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .iclosed-container {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 60px 48px 30px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand {
+            max-width: 300px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .footer-logo img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        .footer-desc {
+            font-size: 14px;
+            color: #999;
+            line-height: 1.6;
+        }
+
+        .footer-col h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col a {
+            color: #999;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-copy {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-legal a {
+            color: #666;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.2s;
+        }
+
+        .footer-legal a:hover {
+            color: #fff;
+        }
+
+        /* International Section */
+        .international-section {
+            padding: 100px 48px;
+            background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+        }
+
+        .international-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .flags-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+
+        .flag-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .flag-item:hover {
+            transform: translateY(-8px);
+        }
+
+        .flag-wrapper {
+            width: 100px;
+            height: 70px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .flag-item:hover .flag-wrapper {
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+        }
+
+        .flag {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .flag-fr .stripe {
+            flex: 1;
+            height: 100%;
+        }
+
+        .flag-fr .blue { background: #002395; }
+        .flag-fr .white { background: #ffffff; }
+        .flag-fr .red { background: #ED2939; }
+
+        .flag-ch {
+            position: relative;
+            background: #FF0000;
+        }
+
+        .flag-ch .ch-bg {
+            width: 100%;
+            height: 100%;
+            background: #FF0000;
+        }
+
+        .flag-ch .ch-cross-h,
+        .flag-ch .ch-cross-v {
+            position: absolute;
+            background: #ffffff;
+        }
+
+        .flag-ch .ch-cross-h {
+            width: 50%;
+            height: 16%;
+            top: 42%;
+            left: 25%;
+        }
+
+        .flag-ch .ch-cross-v {
+            width: 16%;
+            height: 50%;
+            top: 25%;
+            left: 42%;
+        }
+
+        .flag-be .stripe {
+            flex: 1;
+            height: 100%;
+        }
+
+        .flag-be .black { background: #000000; }
+        .flag-be .yellow { background: #FDDA24; }
+        .flag-be .red { background: #EF3340; }
+
+        .flag-lu {
+            flex-direction: column;
+        }
+
+        .flag-lu .stripe-h {
+            flex: 1;
+            width: 100%;
+        }
+
+        .flag-lu .red { background: #EF3340; }
+        .flag-lu .white { background: #ffffff; }
+        .flag-lu .lightblue { background: #00A3E0; }
+
+        .flag-label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 100px 48px;
+            background: linear-gradient(180deg, #f5f5f0 0%, #ffffff 100%);
+        }
+
+        .team-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .team-text h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        .team-text > p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .team-mission {
+            margin-bottom: 28px !important;
+        }
+
+        .team-values {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .team-values li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            font-size: 15px;
+            color: #444;
+        }
+
+        .team-values li svg {
+            width: 20px;
+            height: 20px;
+            stroke: #22c55e;
+            fill: none;
+            stroke-width: 2.5;
+            flex-shrink: 0;
+        }
+
+        .team-image {
+            position: relative;
+        }
+
+        .image-placeholder {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .grenoble-photo {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .location-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a1a;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .location-badge svg {
+            stroke: #2d5a2d;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #fff;
+            border-radius: 20px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            padding: 24px 32px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .modal-header h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .modal-close {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: #f5f5f5;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .modal-close:hover {
+            background: #e5e5e5;
+        }
+
+        .modal-close svg {
+            width: 20px;
+            height: 20px;
+            stroke: #666;
+        }
+
+        .modal-body {
+            padding: 32px;
+        }
+
+        .modal-body h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 24px 0 12px;
+        }
+
+        .modal-body h3:first-child {
+            margin-top: 0;
+        }
+
+        .modal-body p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .modal-body ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .modal-body li {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+
+        .legal-info {
+            background: #f9fafb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .legal-info p {
+            margin-bottom: 8px;
+        }
+
+        .legal-info p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stat-item:nth-child(2) {
+                border-right: none;
+            }
+
+            .stat-item:nth-child(1),
+            .stat-item:nth-child(2) {
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .offres-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .temoignages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+
+            .team-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .flags-container {
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 16px 24px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 40px 24px 60px;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .hero-left h1 {
+                font-size: 36px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .how-it-works,
+            .clients-section,
+            .offres-section,
+            .temoignages-section,
+            .faq-section,
+            .rdv-section {
+                padding: 60px 24px;
+            }
+
+            .section-header h2 {
+                font-size: 28px;
+            }
+
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+
+            .robots-visual {
+                display: none;
+            }
+
+            .features-row {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-item {
+                border-right: none;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .team-section {
+                padding: 60px 24px;
+            }
+
+            .team-content {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .team-text h2 {
+                font-size: 28px;
+            }
+
+            .flags-container {
+                gap: 24px;
+            }
+
+            .flag-wrapper {
+                width: 80px;
+                height: 56px;
+            }
+
+            .international-section {
+                padding: 60px 24px;
+            }
+
+            .history-section {
+                padding: 60px 24px;
+            }
+
+            .history-timeline::before {
+                left: 20px;
+            }
+
+            .history-item:nth-child(odd),
+            .history-item:nth-child(even) {
+                flex-direction: column;
+                padding-left: 60px;
+                padding-right: 0;
+            }
+
+            .history-year {
+                left: 20px;
+                transform: translateX(-50%);
+                font-size: 12px;
+                padding: 6px 14px;
+            }
+
+            .history-card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <a href="#accueil" class="logo">
+                <img src="images/Vortex Logo.png" alt="Vortex">
+                <span>VORTEX</span>
+            </a>
+            <div class="nav-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#comment">Comment ça marche</a>
+                <a href="#equipe">Notre équipe</a>
+                <a href="#rdv">Prendre RDV</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="login.html" class="btn-outline">Espace client</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="version-badge">
+            <img src="images/Vortex Logo.png" alt="Vortex" class="version-logo">
+            <span>Systèmes IA pour entreprises ambitieuses</span>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1>Doublez votre chiffre d'affaires grâce à l'IA</h1>
+            </div>
+            <div class="hero-right">
+                <p>Notre IA remplit votre agenda de rendez-vous qualifiés 24/7, tout en réduisant vos coûts.</p>
+                <div class="hero-buttons">
+                    <a href="#rdv" class="btn-primary">Prendre RDV</a>
+                    <a href="login.html" class="btn-secondary">Espace client</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <wistia-player media-id="yep0stk9wq" aspect="1.7777777777777777"></wistia-player>
+        </div>
+    </section>
+
+    <!-- Comment ça marche Section -->
+    <section class="how-it-works" id="comment">
+        <div class="how-it-works-inner">
+            <div class="section-header">
+                <span class="section-badge badge-green">Le processus</span>
+                <h2>Comment on travaille</h2>
+                <p>Un processus simple et efficace. On s'occupe de tout.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="steps-list">
+                    <div class="step-item active" onclick="setActiveStep(this)">
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <span class="step-title">Étape 1 – Appel avec un expert IA</span>
+                        </div>
+                        <div class="step-content">
+                            <p>Nous analysons votre business, vos objectifs et vos canaux d'acquisition pour identifier exactement où notre IA peut avoir le plus d'impact.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item" onclick="setActiveStep(this)">
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                            </div>
+                            <span class="step-title">Étape 2 – Personnalisation complète</span>
+                        </div>
+                        <div class="step-content">
+                            <p>Notre équipe configure et entraîne l'IA sur mesure pour votre entreprise, vos process et vos prospects idéaux.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item" onclick="setActiveStep(this)">
+                        <div class="step-header">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <span class="step-title">Étape 3 – IA opérationnelle 24/7</span>
+                        </div>
+                        <div class="step-content">
+                            <p>Votre IA commence à générer et réserver des rendez-vous qualifiés automatiquement — même pendant que vous dormez.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="steps-image">
+                    <!-- Étape 1 - Appel avec expert -->
+                    <div class="step-visual active" data-step="1">
+                        <div class="visual-card">
+                            <div class="visual-icon">
+                                <svg viewBox="0 0 120 120" fill="none">
+                                    <circle cx="60" cy="60" r="55" fill="#e8f5e8" stroke="#2d5a2d" stroke-width="2"/>
+                                    <circle cx="60" cy="45" r="18" fill="#2d5a2d"/>
+                                    <path d="M35 85c0-14 11-25 25-25s25 11 25 25" fill="#2d5a2d"/>
+                                    <circle cx="85" cy="35" r="15" fill="#fff" stroke="#2d5a2d" stroke-width="2"/>
+                                    <path d="M80 35h10M85 30v10" stroke="#2d5a2d" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="visual-text">
+                                <span class="visual-label">Analyse</span>
+                                <span class="visual-desc">Comprendre vos objectifs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Étape 2 - Personnalisation -->
+                    <div class="step-visual" data-step="2">
+                        <div class="visual-card">
+                            <div class="visual-icon">
+                                <svg viewBox="0 0 120 120" fill="none">
+                                    <rect x="15" y="25" width="90" height="70" rx="8" fill="#e8f5e8" stroke="#2d5a2d" stroke-width="2"/>
+                                    <rect x="25" y="35" width="30" height="8" rx="2" fill="#2d5a2d"/>
+                                    <rect x="25" y="48" width="50" height="6" rx="2" fill="#2d5a2d" opacity="0.5"/>
+                                    <rect x="25" y="58" width="40" height="6" rx="2" fill="#2d5a2d" opacity="0.5"/>
+                                    <circle cx="85" cy="65" r="20" fill="#2d5a2d"/>
+                                    <path d="M78 65l5 5 10-10" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="visual-text">
+                                <span class="visual-label">Configuration</span>
+                                <span class="visual-desc">IA sur mesure</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Étape 3 - IA opérationnelle -->
+                    <div class="step-visual" data-step="3">
+                        <div class="visual-card">
+                            <div class="visual-icon">
+                                <svg viewBox="0 0 120 120" fill="none">
+                                    <circle cx="60" cy="60" r="50" fill="#e8f5e8" stroke="#2d5a2d" stroke-width="2"/>
+                                    <path d="M60 25v35l20 15" stroke="#2d5a2d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="60" cy="60" r="6" fill="#2d5a2d"/>
+                                    <circle cx="95" cy="30" r="12" fill="#2d5a2d"/>
+                                    <text x="95" y="35" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">24</text>
+                                </svg>
+                            </div>
+                            <div class="visual-text">
+                                <span class="visual-label">Automatisation</span>
+                                <span class="visual-desc">RDV générés 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Row -->
+            <div class="features-row">
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        </div>
+                        <span class="feature-title">Sécurité & Confidentialité Totale</span>
+                    </div>
+                    <p class="feature-description">Vos données sont chiffrées et protégées selon les standards les plus exigeants du marché.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <span class="feature-title">Scalabilité Instantanée</span>
+                    </div>
+                    <p class="feature-description">Notre IA gère un volume illimité de prospects, sans aucune perte de performance.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </div>
+                        <span class="feature-title">Monitoring 24/7</span>
+                    </div>
+                    <p class="feature-description">Nous optimisons votre IA en continu pour garantir des résultats constants, jour et nuit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients / Stats Section -->
+    <section class="clients-section">
+        <div class="clients-inner">
+            <div class="section-header">
+                <span class="section-badge badge-yellow">Résultats</span>
+                <h2>Ce que nos clients obtiennent</h2>
+                <p>Des résultats concrets et mesurables, pas des promesses en l'air.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">3x</div>
+                    <div class="stat-label">Nombre de RDV</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">+100h/semaine</div>
+                    <div class="stat-label">Temps économisées</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">+55%</div>
+                    <div class="stat-label">Taux de réponse</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">-80%</div>
+                    <div class="stat-label">Coûts d'acquisition client</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Présence Internationale Section -->
+    <section class="international-section" id="international">
+        <div class="international-inner">
+            <div class="section-header">
+                <span class="section-badge badge-green">International</span>
+                <h2>Présents dans toute la francophonie</h2>
+                <p>Nous accompagnons des entreprises en France, Suisse, Belgique et Luxembourg.</p>
+            </div>
+
+            <div class="flags-container">
+                <div class="flag-item">
+                    <div class="flag-wrapper">
+                        <div class="flag flag-fr">
+                            <div class="stripe blue"></div>
+                            <div class="stripe white"></div>
+                            <div class="stripe red"></div>
+                        </div>
+                    </div>
+                    <span class="flag-label">France</span>
+                </div>
+                <div class="flag-item">
+                    <div class="flag-wrapper">
+                        <div class="flag flag-ch">
+                            <div class="ch-bg"></div>
+                            <div class="ch-cross-h"></div>
+                            <div class="ch-cross-v"></div>
+                        </div>
+                    </div>
+                    <span class="flag-label">Suisse</span>
+                </div>
+                <div class="flag-item">
+                    <div class="flag-wrapper">
+                        <div class="flag flag-be">
+                            <div class="stripe black"></div>
+                            <div class="stripe yellow"></div>
+                            <div class="stripe red"></div>
+                        </div>
+                    </div>
+                    <span class="flag-label">Belgique</span>
+                </div>
+                <div class="flag-item">
+                    <div class="flag-wrapper">
+                        <div class="flag flag-lu">
+                            <div class="stripe-h red"></div>
+                            <div class="stripe-h white"></div>
+                            <div class="stripe-h lightblue"></div>
+                        </div>
+                    </div>
+                    <span class="flag-label">Luxembourg</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Équipe Section -->
+    <section class="team-section" id="equipe">
+        <div class="team-inner">
+            <div class="team-content">
+                <div class="team-text">
+                    <span class="section-badge badge-green">Notre Équipe</span>
+                    <h2>Basés à Grenoble, au cœur des Alpes</h2>
+                    <p>Notre structure est basée aux États-Unis pour être au plus proche des dernières avancées technologiques en intelligence artificielle. Nous opérons depuis Grenoble, au cœur des Alpes françaises, pour accompagner les entreprises francophones les plus ambitieuses.</p>
+                    <p class="team-mission"><strong>Notre mission :</strong> vous donner une longueur d'avance grâce aux technologies les plus avancées du marché.</p>
+                    <ul class="team-values">
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            Équipe 100% francophone
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            Structure aux USA, opérations depuis la France
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            Experts en IA et automatisation
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                            Support réactif 7j/7
+                        </li>
+                    </ul>
+                    <a href="#rdv" class="btn-primary">Rencontrer notre équipe</a>
+                </div>
+                <div class="team-image">
+                    <div class="image-placeholder">
+                        <img src="images/grenoble.jpg" alt="Grenoble et les Alpes" class="grenoble-photo">
+                        <div class="image-overlay">
+                            <span class="location-badge">
+                                <svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                                Grenoble, France
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Histoire Section -->
+    <section class="history-section" id="histoire">
+        <div class="history-inner">
+            <div class="section-header">
+                <span class="section-badge badge-green">Notre parcours</span>
+                <h2>L'histoire de Vortex</h2>
+                <p>Comment une équipe passionnée est devenue pionnière de l'IA en francophonie.</p>
+            </div>
+
+            <div class="history-timeline">
+                <div class="history-item">
+                    <div class="history-year">2023</div>
+                    <div class="history-card">
+                        <h3>La naissance</h3>
+                        <p>Vortex voit le jour avec une vision : aider les entreprises francophones à accélérer leur croissance grâce au digital. Nous explorons, testons, et apprenons sans relâche.</p>
+                    </div>
+                </div>
+
+                <div class="history-item">
+                    <div class="history-year">2024</div>
+                    <div class="history-card highlight">
+                        <h3>Le déclic</h3>
+                        <p>Nous intégrons l'intelligence artificielle dans nos solutions. Les résultats explosent. Nos clients voient leur acquisition se transformer. C'est une révélation : l'IA change tout.</p>
+                    </div>
+                </div>
+
+                <div class="history-item">
+                    <div class="history-year">2025</div>
+                    <div class="history-card">
+                        <h3>100% IA</h3>
+                        <p>Vortex pivote complètement vers l'IA. Plus de demi-mesures. Nous devenons spécialistes des systèmes d'intelligence artificielle pour entreprises ambitieuses.</p>
+                    </div>
+                </div>
+
+                <div class="history-item">
+                    <div class="history-year">Demain</div>
+                    <div class="history-card future">
+                        <h3>L'avenir</h3>
+                        <p>Notre mission reste la même : donner aux entreprises francophones une longueur d'avance technologique. Et vous, où en serez-vous ?</p>
+                        <a href="#rdv" class="btn-primary">Écrivez la suite avec nous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-inner">
+            <div class="section-header">
+                <span class="section-badge badge-green">FAQ</span>
+                <h2>Questions fréquentes</h2>
+                <p>Les réponses aux questions que vous vous posez.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Comment se passe la collaboration avec Vortex ?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        Tout commence par un appel stratégique gratuit où nous analysons votre situation et vos objectifs. Si nous sommes le bon fit, nous déployons un système sur-mesure adapté à votre entreprise. Vous avez un interlocuteur dédié tout au long du projet.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Mes données sont-elles sécurisées ?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        Absolument. Nous sommes conformes au RGPD et à la LPD suisse. Vos données ne sont jamais partagées avec des tiers et sont hébergées sur des serveurs sécurisés en Europe. La confidentialité de vos informations est notre priorité.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Comment l'IA s'adapte-t-elle à mon entreprise ?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        Nous configurons chaque système selon vos critères de qualification, votre marché cible et votre identité de marque. L'IA apprend votre façon de communiquer et représente votre entreprise avec précision. C'est votre assistant, à votre image.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Travaillez-vous avec des entreprises hors de France ?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        Oui, nous accompagnons des entreprises dans toute la francophonie : France, Suisse, Belgique, Luxembourg, Canada... Notre équipe comprend les spécificités de chaque marché et adapte les stratégies en conséquence.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RDV Section -->
+    <section class="rdv-section" id="rdv">
+        <div class="rdv-inner">
+            <div class="section-header">
+                <span class="section-badge badge-green">Prendre RDV</span>
+                <h2>Discutons de votre projet</h2>
+                <p>Un appel stratégique gratuit pour voir si on peut vous aider.</p>
+            </div>
+
+            <div class="iclosed-container">
+                <div class="iclosed-widget" data-url="https://app.iclosed.io/e/vortex/appel-strategique" title="Doublez votre CA avec l'IA ?" style="width: 100%; height: 700px"></div>
+                <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" async></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/Vortex Logo.png" alt="Vortex">
+                        <span>VORTEX</span>
+                    </div>
+                    <p class="footer-desc">Vortex déploie des systèmes d'intelligence artificielle pour les entreprises francophones qui veulent laisser aucune chance à leur concurrence.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#comment">Comment ça marche</a></li>
+                        <li><a href="#equipe">Notre équipe</a></li>
+                        <li><a href="#histoire">Notre histoire</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#international">International</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#rdv">Prendre RDV</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@vortex.fr">contact@vortex.fr</a></li>
+                        <li><a href="#equipe">Grenoble, France</a></li>
+                        <li><a href="login.html">Espace client</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">© 2026 Vortex. Tous droits réservés.</div>
+                <div class="footer-legal">
+                    <a href="#" onclick="openModal('mentions-legales'); return false;">Mentions légales</a>
+                    <a href="#" onclick="openModal('politique-confidentialite'); return false;">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Mentions Légales -->
+    <div class="modal-overlay" id="mentions-legales">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Mentions Légales</h2>
+                <button class="modal-close" onclick="closeModal('mentions-legales')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="legal-info">
+                    <p><strong>Raison sociale :</strong> Vortex LLC</p>
+                    <p><strong>Siège social :</strong> 1 rue des Pins, 38100 Grenoble, France</p>
+                    <p><strong>Email :</strong> contact@vortex.fr</p>
+                    <p><strong>Numéro d'identification entreprise :</strong> 0008038437</p>
+                    <p style="display: flex; align-items: center; gap: 8px;">
+                        <strong>Président :</strong> Nathan Stievenard
+                        <a href="https://www.linkedin.com/in/nathanstievenard/" target="_blank" rel="noopener" style="display: inline-flex; color: #0077b5;">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </p>
+                </div>
+
+                <h3>Éditeur du site</h3>
+                <p>Le site vortex.fr est édité par Vortex LLC, société à responsabilité limitée.</p>
+
+                <h3>Directeur de la publication</h3>
+                <p>Le directeur de la publication est le représentant légal de Vortex LLC.</p>
+
+                <h3>Hébergement</h3>
+                <p>Ce site est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis.</p>
+
+                <h3>Propriété intellectuelle</h3>
+                <p>L'ensemble du contenu de ce site (textes, images, vidéos, logos, marques) est protégé par le droit de la propriété intellectuelle. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, de ce contenu est strictement interdite sans autorisation écrite préalable de Vortex LLC.</p>
+
+                <h3>Limitation de responsabilité</h3>
+                <p>Vortex LLC s'efforce de fournir des informations exactes et à jour sur ce site. Cependant, elle ne peut garantir l'exactitude, la complétude ou l'actualité des informations diffusées. L'utilisateur reconnaît utiliser ces informations sous sa responsabilité exclusive.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Politique de Confidentialité -->
+    <div class="modal-overlay" id="politique-confidentialite">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Politique de Confidentialité</h2>
+                <button class="modal-close" onclick="closeModal('politique-confidentialite')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Conformité RGPD / LPD</h3>
+                <p>Vortex respecte le Règlement Général sur la Protection des Données (RGPD) et la Loi fédérale suisse sur la protection des données (LPD).</p>
+
+                <div class="legal-info" style="margin-top: 24px;">
+                    <p><strong>Collecte minimale</strong><br>Seules les données nécessaires sont collectées.</p>
+                </div>
+
+                <div class="legal-info">
+                    <p><strong>Consentement explicite</strong><br>Mentions légales intégrées au système.</p>
+                </div>
+
+                <div class="legal-info">
+                    <p><strong>Sécurité</strong><br>Transmission chiffrée SSL/TLS, stockage sécurisé en Europe.</p>
+                </div>
+
+                <div class="legal-info">
+                    <p><strong>Droits des personnes</strong><br>Accès, rectification, effacement et portabilité garantis.</p>
+                </div>
+
+                <div class="legal-info">
+                    <p><strong>Propriété des données</strong><br>Les données collectées appartiennent exclusivement au Client.</p>
+                </div>
+
+                <h3 style="margin-top: 32px;">Exercer vos droits</h3>
+                <p>Pour toute question relative à la protection de vos données ou pour exercer vos droits (accès, rectification, effacement, portabilité), contactez-nous à : <strong>contact@vortex.fr</strong></p>
+
+                <h3>Responsable du traitement</h3>
+                <p>Vortex LLC<br>1 rue des Pins, 38100 Grenoble, France<br>N° d'identification : 0008038437</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal functions
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on overlay click
+        document.querySelectorAll('.modal-overlay').forEach(overlay => {
+            overlay.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.active').forEach(modal => {
+                    modal.classList.remove('active');
+                });
+                document.body.style.overflow = '';
+            }
+        });
+
+        function setActiveStep(element) {
+            // Update step items
+            document.querySelectorAll('.step-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            element.classList.add('active');
+
+            // Update step visuals
+            const stepIndex = Array.from(document.querySelectorAll('.step-item')).indexOf(element) + 1;
+            document.querySelectorAll('.step-visual').forEach(visual => {
+                visual.classList.remove('active');
+            });
+            const activeVisual = document.querySelector(`.step-visual[data-step="${stepIndex}"]`);
+            if (activeVisual) {
+                activeVisual.classList.add('active');
+            }
+        }
+
+        function toggleFaq(button) {
+            const faqItem = button.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
