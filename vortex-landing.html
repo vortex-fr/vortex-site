@@ -950,6 +950,346 @@
             color: #fff;
         }
 
+        /* International Section */
+        .international-section {
+            padding: 100px 48px;
+            background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+        }
+
+        .international-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .flags-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+
+        .flag-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .flag-item:hover {
+            transform: translateY(-8px);
+        }
+
+        .flag-wrapper {
+            width: 100px;
+            height: 70px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .flag-item:hover .flag-wrapper {
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+        }
+
+        .flag {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .flag-fr .stripe {
+            flex: 1;
+            height: 100%;
+        }
+
+        .flag-fr .blue { background: #002395; }
+        .flag-fr .white { background: #ffffff; }
+        .flag-fr .red { background: #ED2939; }
+
+        .flag-ch {
+            position: relative;
+            background: #FF0000;
+        }
+
+        .flag-ch .ch-bg {
+            width: 100%;
+            height: 100%;
+            background: #FF0000;
+        }
+
+        .flag-ch .ch-cross-h,
+        .flag-ch .ch-cross-v {
+            position: absolute;
+            background: #ffffff;
+        }
+
+        .flag-ch .ch-cross-h {
+            width: 50%;
+            height: 16%;
+            top: 42%;
+            left: 25%;
+        }
+
+        .flag-ch .ch-cross-v {
+            width: 16%;
+            height: 50%;
+            top: 25%;
+            left: 42%;
+        }
+
+        .flag-be .stripe {
+            flex: 1;
+            height: 100%;
+        }
+
+        .flag-be .black { background: #000000; }
+        .flag-be .yellow { background: #FDDA24; }
+        .flag-be .red { background: #EF3340; }
+
+        .flag-lu {
+            flex-direction: column;
+        }
+
+        .flag-lu .stripe-h {
+            flex: 1;
+            width: 100%;
+        }
+
+        .flag-lu .red { background: #EF3340; }
+        .flag-lu .white { background: #ffffff; }
+        .flag-lu .lightblue { background: #00A3E0; }
+
+        .flag-label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 100px 48px;
+            background: linear-gradient(180deg, #fdf2f8 0%, #ffffff 100%);
+        }
+
+        .team-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .team-text h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .team-text > p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        .team-values {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .team-values li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            font-size: 15px;
+            color: #444;
+        }
+
+        .team-values li svg {
+            width: 20px;
+            height: 20px;
+            stroke: #22c55e;
+            fill: none;
+            stroke-width: 2.5;
+            flex-shrink: 0;
+        }
+
+        .team-image {
+            position: relative;
+        }
+
+        .image-placeholder {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .mountain-bg {
+            width: 100%;
+            height: 350px;
+        }
+
+        .mountain-bg svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .location-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a1a;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .location-badge svg {
+            stroke: #ec4899;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #fff;
+            border-radius: 20px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            padding: 24px 32px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .modal-header h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .modal-close {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: #f5f5f5;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .modal-close:hover {
+            background: #e5e5e5;
+        }
+
+        .modal-close svg {
+            width: 20px;
+            height: 20px;
+            stroke: #666;
+        }
+
+        .modal-body {
+            padding: 32px;
+        }
+
+        .modal-body h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 24px 0 12px;
+        }
+
+        .modal-body h3:first-child {
+            margin-top: 0;
+        }
+
+        .modal-body p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .modal-body ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .modal-body li {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+
+        .legal-info {
+            background: #f9fafb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .legal-info p {
+            margin-bottom: 8px;
+        }
+
+        .legal-info p:last-child {
+            margin-bottom: 0;
+        }
+
         /* Responsive */
         @media (max-width: 1024px) {
             .stats-grid {
