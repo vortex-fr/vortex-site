@@ -1222,6 +1222,11 @@
             position: relative;
         }
 
+        .team-image-mobile {
+            display: none;
+            margin: 24px 0;
+        }
+
         .image-placeholder {
             position: relative;
             border-radius: 20px;
@@ -1520,6 +1525,18 @@
 
             .team-text h2 {
                 font-size: 28px;
+            }
+
+            .team-image-mobile {
+                display: block;
+            }
+
+            .team-image-mobile .grenoble-photo {
+                height: 240px;
+            }
+
+            .team-image {
+                display: none;
             }
 
             .flags-container {
@@ -1900,6 +1917,17 @@
             <div class="team-content">
                 <div class="team-text">
                     <span class="section-badge badge-green">Notre Équipe</span>
+                    <div class="team-image-mobile">
+                        <div class="image-placeholder">
+                            <img src="images/grenoble.jpg" alt="Grenoble et les Alpes" class="grenoble-photo">
+                            <div class="image-overlay">
+                                <span class="location-badge">
+                                    <svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                                    Grenoble, France
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                     <h2>Basés à Grenoble, au cœur des Alpes</h2>
                     <p>Notre structure est basée aux États-Unis pour être au plus proche des dernières avancées technologiques en intelligence artificielle. Nous opérons depuis Grenoble, au cœur des Alpes françaises, pour accompagner les entreprises francophones les plus ambitieuses.</p>
                     <p class="team-mission"><strong>Notre mission :</strong> vous donner une longueur d'avance grâce aux technologies les plus avancées du marché.</p>
