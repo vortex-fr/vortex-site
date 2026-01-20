@@ -4,11 +4,11 @@
   "rewrites": [
     {
       "source": "/demo",
-      "destination": "https://demo2-virid-nine.vercel.app"
+      "destination": "https://demo2-virid-nine.vercel.app/demo"
     },
     {
       "source": "/demo/:path*",
-      "destination": "https://demo2-virid-nine.vercel.app/:path*"
+      "destination": "https://demo2-virid-nine.vercel.app/demo/:path*"
     }
   ]
 }
