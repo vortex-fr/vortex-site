@@ -272,163 +272,195 @@
             fill: none;
         }
 
-        /* Specialty Section */
-        .specialty-section {
+        /* History Section */
+        .history-section {
             padding: 100px 48px;
-            background: #fff;
+            background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
         }
 
-        .specialty-inner {
+        .history-inner {
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .specialty-grid {
+        .history-content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .history-text h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 32px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            bottom: 8px;
+            width: 3px;
+            background: linear-gradient(180deg, #2d5a2d 0%, #22c55e 100%);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 32px;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -44px;
+            top: 0;
+            width: 28px;
+            height: 28px;
+            background: #2d5a2d;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .timeline-content h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .timeline-content p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .history-visual {
+            display: flex;
+            justify-content: center;
+        }
+
+        .history-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            border-radius: 24px;
+            padding: 48px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .history-stat {
+            text-align: center;
+        }
+
+        .history-stat .stat-number {
+            display: block;
+            font-size: 48px;
+            font-weight: 800;
+            color: #22c55e;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .history-stat .stat-text {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* What We Do Section */
+        .whatwedo-section {
+            padding: 100px 48px;
+            background: #fff;
+        }
+
+        .whatwedo-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .whatwedo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
             margin-top: 60px;
         }
 
-        .specialty-card {
+        .whatwedo-card {
+            text-align: center;
+            padding: 40px 32px;
             background: #f9fafb;
             border-radius: 20px;
-            padding: 32px;
             border: 1px solid #f0f0f0;
             transition: all 0.3s ease;
         }
 
-        .specialty-card:hover {
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-            transform: translateY(-4px);
+        .whatwedo-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
         }
 
-        .specialty-card.main-card {
-            grid-column: span 2;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: #fff;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .specialty-card.main-card h3 {
-            color: #fff;
-            font-size: 28px;
-        }
-
-        .specialty-card.main-card p {
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .specialty-icon {
-            width: 56px;
-            height: 56px;
-            background: #e8f5e8;
-            border-radius: 16px;
+        .whatwedo-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c8 100%);
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
+            margin: 0 auto 24px;
         }
 
-        .specialty-card.main-card .specialty-icon {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .specialty-icon svg {
-            width: 28px;
-            height: 28px;
+        .whatwedo-icon svg {
+            width: 32px;
+            height: 32px;
             stroke: #2d5a2d;
         }
 
-        .specialty-card.main-card .specialty-icon svg {
-            stroke: #22c55e;
-        }
-
-        .specialty-card h3 {
+        .whatwedo-card h3 {
             font-size: 20px;
             font-weight: 600;
             color: #1a1a1a;
             margin-bottom: 12px;
         }
 
-        .specialty-card p {
+        .whatwedo-card p {
             font-size: 15px;
             color: #666;
             line-height: 1.6;
         }
 
-        .specialty-features {
-            list-style: none;
-            margin-top: 24px;
-            grid-column: 2;
-        }
-
-        .specialty-features li {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 10px 0;
-            font-size: 15px;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .specialty-features li::before {
-            content: "✓";
-            color: #22c55e;
-            font-weight: bold;
-        }
-
-        .specialty-cta {
-            margin-top: 48px;
-            background: linear-gradient(135deg, #2d5a2d 0%, #3d7a3d 100%);
-            border-radius: 24px;
-            padding: 48px;
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 48px;
-            align-items: center;
-            color: #fff;
-        }
-
-        .cta-content h3 {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-
-        .cta-content p {
-            font-size: 16px;
-            opacity: 0.9;
-            line-height: 1.7;
-            margin-bottom: 24px;
-        }
-
-        .cta-content .btn-primary {
-            background: #fff;
-            color: #2d5a2d;
-        }
-
-        .cta-content .btn-primary:hover {
-            background: #f0f0f0;
-        }
-
-        .cta-stats {
+        .whatwedo-cta {
             text-align: center;
+            margin-top: 48px;
+            padding: 32px;
+            background: #f9fafb;
+            border-radius: 16px;
         }
 
-        .cta-stat-value {
-            display: block;
-            font-size: 48px;
-            font-weight: 800;
-            margin-bottom: 8px;
-        }
-
-        .cta-stat-label {
+        .whatwedo-cta p {
             font-size: 16px;
-            opacity: 0.9;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .whatwedo-cta strong {
+            color: #1a1a1a;
         }
 
         /* Comment ça marche Section */
