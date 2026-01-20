@@ -1075,6 +1075,11 @@
             transition: box-shadow 0.3s ease;
         }
 
+        .flag-wrapper-square {
+            width: 70px;
+            height: 70px;
+        }
+
         .flag-item:hover .flag-wrapper {
             box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
         }
@@ -1467,16 +1472,30 @@
             }
 
             .stats-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .stat-item {
                 border-right: none;
                 border-bottom: 1px solid #f0f0f0;
+                padding: 24px 16px;
             }
 
-            .stat-item:last-child {
+            .stat-item:nth-child(odd) {
+                border-right: 1px solid #f0f0f0;
+            }
+
+            .stat-item:nth-child(3),
+            .stat-item:nth-child(4) {
                 border-bottom: none;
+            }
+
+            .stat-value {
+                font-size: 28px;
+            }
+
+            .stat-label {
+                font-size: 12px;
             }
 
             .footer-top {
@@ -1512,6 +1531,11 @@
                 height: 56px;
             }
 
+            .flag-wrapper-square {
+                width: 56px;
+                height: 56px;
+            }
+
             .international-section {
                 padding: 60px 24px;
             }
@@ -1540,6 +1564,60 @@
 
             .history-card {
                 padding: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-item {
+                border-right: none !important;
+                border-bottom: 1px solid #f0f0f0;
+                padding: 20px 16px;
+            }
+
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+
+            .stat-value {
+                font-size: 32px;
+            }
+
+            .stat-label {
+                font-size: 13px;
+            }
+
+            .clients-section {
+                padding: 48px 16px;
+            }
+
+            .section-header h2 {
+                font-size: 24px;
+            }
+
+            .section-header p {
+                font-size: 14px;
+            }
+
+            .flag-wrapper {
+                width: 70px;
+                height: 48px;
+            }
+
+            .flag-wrapper-square {
+                width: 48px;
+                height: 48px;
+            }
+
+            .flags-container {
+                gap: 16px;
+            }
+
+            .flag-label {
+                font-size: 14px;
             }
         }
     </style>
@@ -1783,7 +1861,7 @@
                     <span class="flag-label">France</span>
                 </div>
                 <div class="flag-item">
-                    <div class="flag-wrapper">
+                    <div class="flag-wrapper flag-wrapper-square">
                         <div class="flag flag-ch">
                             <div class="ch-bg"></div>
                             <div class="ch-cross-h"></div>
