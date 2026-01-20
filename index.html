@@ -2108,6 +2108,11 @@
     </div>
 
     <script>
+        // Clean up hash-based URLs (legacy redirect)
+        if (window.location.hash === '#/' || window.location.hash === '#') {
+            history.replaceState(null, '', window.location.pathname);
+        }
+
         // Modal functions
         function openModal(modalId) {
             document.getElementById(modalId).classList.add('active');
