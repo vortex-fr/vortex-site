@@ -275,192 +275,113 @@
         /* History Section */
         .history-section {
             padding: 100px 48px;
-            background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
-        }
-
-        .history-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .history-content {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 80px;
-            align-items: center;
-        }
-
-        .history-text h2 {
-            font-size: 42px;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 40px;
-        }
-
-        .timeline {
-            position: relative;
-            padding-left: 32px;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 8px;
-            bottom: 8px;
-            width: 3px;
-            background: linear-gradient(180deg, #2d5a2d 0%, #22c55e 100%);
-            border-radius: 2px;
-        }
-
-        .timeline-item {
-            position: relative;
-            padding-bottom: 32px;
-        }
-
-        .timeline-item:last-child {
-            padding-bottom: 0;
-        }
-
-        .timeline-marker {
-            position: absolute;
-            left: -44px;
-            top: 0;
-            width: 28px;
-            height: 28px;
-            background: #2d5a2d;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            font-weight: 700;
+            background: linear-gradient(180deg, #1a1a1a 0%, #2d2d2d 100%);
             color: #fff;
         }
 
-        .timeline-content h3 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 8px;
-        }
-
-        .timeline-content p {
-            font-size: 15px;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .history-visual {
-            display: flex;
-            justify-content: center;
-        }
-
-        .history-card {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            border-radius: 24px;
-            padding: 48px 40px;
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
-        }
-
-        .history-stat {
-            text-align: center;
-        }
-
-        .history-stat .stat-number {
-            display: block;
-            font-size: 48px;
-            font-weight: 800;
-            color: #22c55e;
-            line-height: 1;
-            margin-bottom: 8px;
-        }
-
-        .history-stat .stat-text {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        /* What We Do Section */
-        .whatwedo-section {
-            padding: 100px 48px;
-            background: #fff;
-        }
-
-        .whatwedo-inner {
-            max-width: 1000px;
+        .history-inner {
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        .whatwedo-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
+        .history-section .section-header h2 {
+            color: #fff;
+        }
+
+        .history-section .section-header p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .history-timeline {
             margin-top: 60px;
+            position: relative;
         }
 
-        .whatwedo-card {
-            text-align: center;
-            padding: 40px 32px;
-            background: #f9fafb;
-            border-radius: 20px;
-            border: 1px solid #f0f0f0;
-            transition: all 0.3s ease;
+        .history-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, #2d5a2d 0%, #22c55e 50%, #2d5a2d 100%);
         }
 
-        .whatwedo-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
-        }
-
-        .whatwedo-icon {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c8 100%);
-            border-radius: 20px;
+        .history-item {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 24px;
+            align-items: flex-start;
+            margin-bottom: 48px;
+            position: relative;
         }
 
-        .whatwedo-icon svg {
-            width: 32px;
-            height: 32px;
-            stroke: #2d5a2d;
+        .history-item:last-child {
+            margin-bottom: 0;
         }
 
-        .whatwedo-card h3 {
+        .history-item:nth-child(odd) {
+            flex-direction: row;
+            padding-right: calc(50% + 40px);
+        }
+
+        .history-item:nth-child(even) {
+            flex-direction: row-reverse;
+            padding-left: calc(50% + 40px);
+        }
+
+        .history-year {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #22c55e;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            white-space: nowrap;
+            z-index: 1;
+        }
+
+        .history-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 28px;
+            width: 100%;
+        }
+
+        .history-card.highlight {
+            background: rgba(34, 197, 94, 0.1);
+            border-color: rgba(34, 197, 94, 0.3);
+        }
+
+        .history-card.future {
+            background: linear-gradient(135deg, rgba(45, 90, 45, 0.3) 0%, rgba(34, 197, 94, 0.2) 100%);
+            border-color: #22c55e;
+        }
+
+        .history-card h3 {
             font-size: 20px;
             font-weight: 600;
-            color: #1a1a1a;
+            color: #fff;
             margin-bottom: 12px;
         }
 
-        .whatwedo-card p {
+        .history-card p {
             font-size: 15px;
-            color: #666;
-            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 0;
         }
 
-        .whatwedo-cta {
-            text-align: center;
-            margin-top: 48px;
-            padding: 32px;
-            background: #f9fafb;
-            border-radius: 16px;
+        .history-card .btn-primary {
+            margin-top: 20px;
+            background: #22c55e;
         }
 
-        .whatwedo-cta p {
-            font-size: 16px;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .whatwedo-cta strong {
-            color: #1a1a1a;
+        .history-card .btn-primary:hover {
+            background: #16a34a;
         }
 
         /* Comment ça marche Section */
