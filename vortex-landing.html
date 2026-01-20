@@ -2039,10 +2039,21 @@
         });
 
         function setActiveStep(element) {
+            // Update step items
             document.querySelectorAll('.step-item').forEach(item => {
                 item.classList.remove('active');
             });
             element.classList.add('active');
+
+            // Update step visuals
+            const stepIndex = Array.from(document.querySelectorAll('.step-item')).indexOf(element) + 1;
+            document.querySelectorAll('.step-visual').forEach(visual => {
+                visual.classList.remove('active');
+            });
+            const activeVisual = document.querySelector(`.step-visual[data-step="${stepIndex}"]`);
+            if (activeVisual) {
+                activeVisual.classList.add('active');
+            }
         }
 
         function toggleFaq(button) {
