@@ -272,6 +272,165 @@
             fill: none;
         }
 
+        /* Specialty Section */
+        .specialty-section {
+            padding: 100px 48px;
+            background: #fff;
+        }
+
+        .specialty-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 60px;
+        }
+
+        .specialty-card {
+            background: #f9fafb;
+            border-radius: 20px;
+            padding: 32px;
+            border: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+
+        .specialty-card:hover {
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .specialty-card.main-card {
+            grid-column: span 2;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .specialty-card.main-card h3 {
+            color: #fff;
+            font-size: 28px;
+        }
+
+        .specialty-card.main-card p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .specialty-icon {
+            width: 56px;
+            height: 56px;
+            background: #e8f5e8;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .specialty-card.main-card .specialty-icon {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .specialty-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: #2d5a2d;
+        }
+
+        .specialty-card.main-card .specialty-icon svg {
+            stroke: #22c55e;
+        }
+
+        .specialty-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .specialty-card p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .specialty-features {
+            list-style: none;
+            margin-top: 24px;
+            grid-column: 2;
+        }
+
+        .specialty-features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .specialty-features li::before {
+            content: "✓";
+            color: #22c55e;
+            font-weight: bold;
+        }
+
+        .specialty-cta {
+            margin-top: 48px;
+            background: linear-gradient(135deg, #2d5a2d 0%, #3d7a3d 100%);
+            border-radius: 24px;
+            padding: 48px;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 48px;
+            align-items: center;
+            color: #fff;
+        }
+
+        .cta-content h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .cta-content p {
+            font-size: 16px;
+            opacity: 0.9;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .cta-content .btn-primary {
+            background: #fff;
+            color: #2d5a2d;
+        }
+
+        .cta-content .btn-primary:hover {
+            background: #f0f0f0;
+        }
+
+        .cta-stats {
+            text-align: center;
+        }
+
+        .cta-stat-value {
+            display: block;
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .cta-stat-label {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
         /* Comment ça marche Section */
         .how-it-works {
             padding: 100px 48px;
