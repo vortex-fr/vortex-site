@@ -1519,30 +1519,26 @@
                 padding: 60px 24px;
             }
 
-            .history-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
+            .history-timeline::before {
+                left: 20px;
             }
 
-            .history-text h2 {
-                font-size: 28px;
+            .history-item:nth-child(odd),
+            .history-item:nth-child(even) {
+                flex-direction: column;
+                padding-left: 60px;
+                padding-right: 0;
+            }
+
+            .history-year {
+                left: 20px;
+                transform: translateX(-50%);
+                font-size: 12px;
+                padding: 6px 14px;
             }
 
             .history-card {
-                padding: 32px;
-            }
-
-            .history-stat .stat-number {
-                font-size: 36px;
-            }
-
-            .whatwedo-section {
-                padding: 60px 24px;
-            }
-
-            .whatwedo-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
+                padding: 24px;
             }
         }
     </style>
